@@ -6,6 +6,7 @@ const sections = [
     id: 'literature',
     title: 'Literature Survey',
     icon: FaBook,
+    image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description:
       'Speech sound disorders in children present a range of challenges, from phoneme misarticulation to fluency issues and motor planning deficits. Studies highlight the importance of data-driven methods and digital tools in therapy. Research shows success in automated phonological error detection, adaptive articulation correction, and interactive therapy for childhood apraxia and stuttering. Mobile-based systems like those developed in Sri Lanka for native language intervention and internationally for articulation and CAS demonstrate the efficacy of combining AI with structured therapeutic frameworks.',
   },
@@ -13,12 +14,14 @@ const sections = [
     id: 'gap',
     title: 'Research Gap',
     icon: FaSearch,
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description: '',
   },
   {
     id: 'problem',
     title: 'Research Problem & Solution',
     icon: FaLightbulb,
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description:
       'Children with speech sound disorders face difficulties in accurate diagnosis and effective therapy due to fragmented tools and limited clinical resources. The problem lies in the lack of a unified, AI-powered system that addresses multiple speech impairments with personalized therapy. The proposed solution, "ArticuLearn", combines machine learning, deep learning, and real-time feedback mechanisms to detect and intervene in phonological disorders, articulation issues, stuttering, and apraxia through a mobile-friendly, adaptive therapy system tailored to individual needs.',
   },
@@ -26,12 +29,14 @@ const sections = [
     id: 'objectives',
     title: 'Research Objectives',
     icon: FaBullseye,
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description: '',
   },
   {
     id: 'methodology',
     title: 'Methodology',
     icon: FaCode,
+    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description:
       'The study followed an experimental design using machine learning for speech error classification and therapy personalization. Speech data from children aged 4–12 was collected and preprocessed to extract features like MFCCs. Four LSTM-based models were trained to detect phonological errors, while a neural network was developed for articulation issues. For fluency disorder detection, data augmentation and a CNN-BiLSTM model were used. CAS detection used attention-based architectures and reinforcement learning to adjust therapy in real-time. A mobile interface enabled recording, feedback, and progress tracking for end-users.',
   },
@@ -39,6 +44,7 @@ const sections = [
     id: 'technologies',
     title: 'Technologies',
     icon: FaTools,
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description: '',
   },
 ]
@@ -67,18 +73,27 @@ const ProjectScopeSection: React.FC = () => {
               {section.id === 'gap' ? (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
                   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                      <img src={section.image} alt={section.title} className="w-full h-full object-cover" />
+                    </div>
                     <h4 className="text-lg font-semibold mb-3 text-blue-700">Multi-disorder Integration</h4>
                     <p className="text-gray-600">
                       Most existing systems address only a single speech disorder. There's a lack of unified platforms that integrate phonological, articulation, fluency, and motor planning deficits (CAS) within one intelligent framework.
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Adaptive Feedback" className="w-full h-full object-cover" />
+                    </div>
                     <h4 className="text-lg font-semibold mb-3 text-blue-700">Adaptive Feedback and Severity Scoring</h4>
                     <p className="text-gray-600">
                       While some models identify errors, very few provide severity assessment or adaptive therapy progression. Systems rarely personalize exercises based on real-time user improvement or regression, especially in pediatric cases.
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Real-Time Data" className="w-full h-full object-cover" />
+                    </div>
                     <h4 className="text-lg font-semibold mb-3 text-blue-700">Real-Time Data & Remote Therapy Support</h4>
                     <p className="text-gray-600">
                       Current tools often miss features like progress monitoring, live feedback, or parent-therapist connectivity. Especially in regions like Sri Lanka, accessible mobile-based therapy and real-time communication are underexplored.
@@ -87,6 +102,9 @@ const ProjectScopeSection: React.FC = () => {
                 </div>
               ) : section.id === 'objectives' ? (
                 <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                    <img src={section.image} alt={section.title} className="w-full h-full object-cover" />
+                  </div>
                   <ol className="list-decimal pl-5 text-gray-600 space-y-4">
                     <li className="flex items-start">
                       <span className="font-semibold text-blue-700 mr-2">1.</span>
@@ -128,6 +146,9 @@ const ProjectScopeSection: React.FC = () => {
                 </div>
               ) : (
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                    <img src={section.image} alt={section.title} className="w-full h-full object-cover" />
+                  </div>
                   <p className="text-gray-600 text-justify leading-relaxed">{section.description}</p>
                 </div>
               )}

@@ -59,13 +59,13 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center text-gray-400">
                 <FaEnvelope className="w-5 h-5 mr-3 text-blue-400" />
-                <a href="mailto:it21222290@my.sliit.lk" className="hover:text-blue-400 transition-colors">
-                  it21222290@my.sliit.lk
+                <a href="mailto:it21221446@my.sliit.lk" className="hover:text-blue-400 transition-colors">
+                  it21221446@my.sliit.lk
                 </a>
               </li>
               <li className="flex items-center text-gray-400">
                 <FaPhone className="w-5 h-5 mr-3 text-blue-400" />
-                <span>+94 11 754 4801</span>
+                <span>+94 77 89 09 086</span>
               </li>
             </ul>
           </div>

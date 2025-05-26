@@ -94,7 +94,7 @@ const DownloadsSection: React.FC = () => {
         <div id="documents" className="mb-16">
           <div className="flex items-center mb-6">
             <FaFileAlt className="w-8 h-8 text-blue-600 mr-3" />
-            <h3 className="text-2xl font-semibold text-gray-700">📄 Documents</h3>
+            <h3 className="text-2xl font-semibold text-gray-700">Documents</h3>
           </div>
           {renderTable(documents, 'documents')}
         </div>
@@ -102,7 +102,7 @@ const DownloadsSection: React.FC = () => {
         <div id="presentations">
           <div className="flex items-center mb-6">
             <FaFilePowerpoint className="w-8 h-8 text-red-600 mr-3" />
-            <h3 className="text-2xl font-semibold text-gray-700">📽️ Presentations</h3>
+            <h3 className="text-2xl font-semibold text-gray-700"> Presentations</h3>
           </div>
           {renderTable(presentations, 'presentations')}
         </div>

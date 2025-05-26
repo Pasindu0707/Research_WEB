@@ -5,7 +5,7 @@ import ishara from '../assets/msishara.png'
 import kishen from '../assets/kishen.jpg'
 import sapna from '../assets/sapna.jpg'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
-// import shehan from '../assets/MalithMirandaPhotograpy-8976.jpg'
+import shehan from '../assets/shehan.jpg'
 interface TeamMember {
   name: string
   role: string
@@ -53,8 +53,8 @@ const team: TeamMember[] = [
     department: 'Software Engineering',
     image: kishen,
     social: {
-      linkedin: '#',
-      github: '#',
+      linkedin: 'https://www.linkedin.com/in/kishen-ranasinghe/',
+      github: 'https://github.com/kiiigaaa',
       email: 'it21222290@my.sliit.lk'
     }
   },
@@ -64,11 +64,11 @@ const team: TeamMember[] = [
     status: 'Undergraduate',
     university: 'Sri Lanka Institute of Information Technology',
     department: 'Information Techonology',
-    image: 'https://randomuser.me/api/portraits/men/14.jpg',
+    image: shehan,
     social: {
-      linkedin: '#',
-      github: '#',
-      email: 'it21222290@my.sliit.lk'
+      linkedin: 'https://www.linkedin.com/in/shehan-annasiwatta/',
+      github: 'https://github.com/Shehan-Annasiwatta',
+      email: 'it21217968@my.sliit.lk'
     }
   },
   {
@@ -79,9 +79,9 @@ const team: TeamMember[] = [
     department: 'Software Engineering',
     image: pasindu,
     social: {
-      linkedin: '#',
-      github: '#',
-      email: 'it21222290@my.sliit.lk'
+      linkedin: 'https://www.linkedin.com/in/pasindu-fernando-525357191/',
+      github: 'https://github.com/Pasindu0707',
+      email: 'it21221446@my.sliit.lk'
     }
   },
   {
@@ -92,9 +92,9 @@ const team: TeamMember[] = [
     department: 'Software Engineering',
     image: sapna,
     social: {
-      linkedin: '#',
-      github: '#',
-      email: 'it21222290@my.sliit.lk'
+      linkedin: 'https://www.linkedin.com/in/sapna-de-zoysa-840993215/',
+      github: 'https://github.com/sapna1217',
+      email: 'it21219634@my.sliit.lk'
     }
   }
 ]
