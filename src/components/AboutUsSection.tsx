@@ -1,5 +1,11 @@
 import React from 'react'
-
+import pasindu from '../assets/MalithMirandaPhotograpy-8976.jpg'
+import samantha from '../assets/SamanthaSir.jpg'
+import ishara from '../assets/msishara.png'
+import kishen from '../assets/kishen.jpg'
+import sapna from '../assets/sapna.jpg'
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+// import shehan from '../assets/MalithMirandaPhotograpy-8976.jpg'
 interface TeamMember {
   name: string
   role: string
@@ -7,89 +13,142 @@ interface TeamMember {
   university: string
   department: string
   image: string
+  social?: {
+    linkedin?: string
+    github?: string
+    email?: string
+  }
 }
 
 const team: TeamMember[] = [
   {
-    name: 'Rajapaksha H.M.U.D',
-    role: 'Group Member',
-    status: 'Undergraduate',
+    name: 'Dr. Samantha Thelijjagoda',
+    role: 'Supervisor',
+    status: 'Pro Vice-Chancellor (Research & International)',
     university: 'Sri Lanka Institute of Information Technology',
-    department: 'Software Engineering',
-    image: 'https://randomuser.me/api/portraits/men/11.jpg',
+    department: 'Pro Vice-Chancellor (Research & International)',
+    image: samantha,
+    social: {
+      linkedin: '#',
+      email: 'samantha.t@sliit.lk'
+    }
   },
   {
-    name: 'Fernando P.K.',
-    role: 'Group Member',
-    status: 'Undergraduate',
+    name: 'Ms. Ishara Weerathunga',
+    role: 'Co-Supervisor',
+    status: 'Lecturer',
     university: 'Sri Lanka Institute of Information Technology',
-    department: 'Software Engineering',
-    image: 'https://randomuser.me/api/portraits/men/12.jpg',
+    department: 'Faculty of Computing | Information Technology',
+    image: ishara,
+    social: {
+      linkedin: '#',
+      email: 'ishara.w@sliit.lk'
+    }
   },
   {
-    name: 'De Zoysa S.',
+    name: 'RANASINGHE K.G',
     role: 'Group Member',
     status: 'Undergraduate',
     university: 'Sri Lanka Institute of Information Technology',
     department: 'Software Engineering',
-    image: 'https://randomuser.me/api/portraits/women/13.jpg',
+    image: kishen,
+    social: {
+      linkedin: '#',
+      github: '#',
+      email: 'it21222290@my.sliit.lk'
+    }
   },
   {
     name: 'Annasiwatta S.',
     role: 'Group Member',
     status: 'Undergraduate',
     university: 'Sri Lanka Institute of Information Technology',
-    department: 'Software Engineering',
+    department: 'Information Techonology',
     image: 'https://randomuser.me/api/portraits/men/14.jpg',
+    social: {
+      linkedin: '#',
+      github: '#',
+      email: 'it21222290@my.sliit.lk'
+    }
   },
   {
-    name: 'Dr. Samantha Thelijjagoda',
-    role: 'Supervisor',
-    status: 'Senior Lecturer',
+    name: 'Fernando P.P.M',
+    role: 'Group Member',
+    status: 'Undergraduate',
     university: 'Sri Lanka Institute of Information Technology',
     department: 'Software Engineering',
-    image: 'https://randomuser.me/api/portraits/women/20.jpg',
+    image: pasindu,
+    social: {
+      linkedin: '#',
+      github: '#',
+      email: 'it21222290@my.sliit.lk'
+    }
   },
   {
-    name: 'Dr. Ishara Weerathunga',
-    role: 'Co-Supervisor',
-    status: 'Lecturer',
+    name: 'De Zoysa A.P.S',
+    role: 'Group Member',
+    status: 'Undergraduate',
     university: 'Sri Lanka Institute of Information Technology',
     department: 'Software Engineering',
-    image: 'https://randomuser.me/api/portraits/women/21.jpg',
-  },
-  {
-    name: 'Senarath P.G.S.',
-    role: 'External Reviewer',
-    status: 'Researcher',
-    university: 'University of Colombo School of Computing',
-    department: 'Computer Science',
-    image: 'https://randomuser.me/api/portraits/men/22.jpg',
-  },
+    image: sapna,
+    social: {
+      linkedin: '#',
+      github: '#',
+      email: 'it21222290@my.sliit.lk'
+    }
+  }
 ]
 
 const AboutUsSection: React.FC = () => {
   return (
-    <section id="about" className="bg-gray-50 py-16 px-4">
+    <section id="about" className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-12">Meet Our Team 👨‍💻👩‍🏫</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet Our Team 👨‍💻👩‍🏫</h2>
+        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+          Our diverse team of experts and researchers is dedicated to making speech therapy more accessible and effective for children.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg p-6 border hover:shadow-xl transition text-center"
+              className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md"
-              />
-              <h3 className="text-lg font-semibold text-gray-800">{member.name}</h3>
-              <p className="text-sm text-blue-600">{member.role}</p>
-              <p className="text-sm text-gray-600 italic">{member.status}</p>
-              <p className="text-sm text-gray-600 mt-2">{member.university}</p>
-              <p className="text-sm text-gray-600">{member.department}</p>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-32 h-32 rounded-full mx-auto mt-8 mb-4 object-cover shadow-md border-4 border-white"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-1">{member.name}</h3>
+                <p className="text-blue-600 font-medium mb-2">{member.role}</p>
+                <p className="text-sm text-gray-600 italic mb-3">{member.status}</p>
+                <p className="text-sm text-gray-600 mb-1">{member.university}</p>
+                <p className="text-sm text-gray-600 mb-4">{member.department}</p>
+                
+                {member.social && (
+                  <div className="flex justify-center space-x-4 mt-4">
+                    {member.social.linkedin && (
+                      <a href={member.social.linkedin} className="text-gray-600 hover:text-blue-600 transition-colors">
+                        <FaLinkedin className="w-5 h-5" />
+                      </a>
+                    )}
+                    {member.social.github && (
+                      <a href={member.social.github} className="text-gray-600 hover:text-gray-900 transition-colors">
+                        <FaGithub className="w-5 h-5" />
+                      </a>
+                    )}
+                    {member.social.email && (
+                      <a href={`mailto:${member.social.email}`} className="text-gray-600 hover:text-red-600 transition-colors">
+                        <FaEnvelope className="w-5 h-5" />
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
