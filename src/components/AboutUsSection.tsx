@@ -6,6 +6,8 @@ import kishen from '../assets/kishen.jpg'
 import sapna from '../assets/sapna.jpg'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import shehan from '../assets/shehan.jpg'
+import external from '../assets/external.jpeg'
+
 interface TeamMember {
   name: string
   role: string
@@ -43,6 +45,17 @@ const team: TeamMember[] = [
     social: {
       linkedin: '#',
       email: 'ishara.w@sliit.lk'
+    }
+  },
+    {
+    name: 'Ms Buddima Samaraweera',
+    role: 'External Supervisor',
+    status: 'Doctor',
+    university: '',
+    department: '',
+    image: external,
+    social: {
+      email: 'buddhima09@gmail.com'
     }
   },
   {

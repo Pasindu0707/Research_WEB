@@ -66,11 +66,12 @@ const DownloadsSection: React.FC = () => {
                 {item.link ? (
                   <a
                     href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
-                    download
                   >
                     <FaDownload className="mr-2" />
-                    Download
+                    Open
                   </a>
                 ) : (
                   <span className="text-gray-400 italic">Pending</span>
