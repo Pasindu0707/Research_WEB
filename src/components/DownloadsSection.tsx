@@ -9,15 +9,15 @@ interface DownloadItem {
 }
 
 const documents: DownloadItem[] = [
-  { title: 'Topic Assessment', submittedOn: '2021/02/25', type: 'Group', link: '#' },
-  { title: 'Project Charter', submittedOn: '2021/02/25', type: 'Group', link: '#' },
-  { title: 'Project Proposal', submittedOn: '2021/03/22', type: 'Individual', link: '#' },
-  { title: 'Status Documents I', submittedOn: '2021/07/05', type: 'Individual', link: '#' },
+  { title: 'Topic Assessment', submittedOn: '2024/05', type: 'Group', link: 'https://drive.google.com/drive/folders/1E2-hPamo6j4xdM-GdWFoHxvU2iqPVCT3?dmr=1&ec=wgc-drive-hero-goto' },
+  { title: 'Project Charter', submittedOn: '2024/04', type: 'Group', link: 'https://drive.google.com/drive/folders/1E2-hPamo6j4xdM-GdWFoHxvU2iqPVCT3?dmr=1&ec=wgc-drive-hero-goto' },
+  { title: 'Project Proposal', submittedOn: '2024/08', type: 'Individual', link: 'https://drive.google.com/drive/folders/1D5fi64kKsC-L2ndLuAOaHq1RRI6tG_sZ?dmr=1&ec=wgc-drive-hero-goto' },
+  { title: 'Status Documents I', submittedOn: '2024/12', type: 'Individual', link: '#' },
   { title: 'Status Documents II', submittedOn: 'Yet to be submitted, link will be updated soon.', type: 'Individual' },
-  { title: 'Research Paper', submittedOn: 'Yet to be submitted, link will be updated soon.', type: 'Group' },
-  { title: 'Final Report', submittedOn: '2021/10/13', type: 'Group', link: '#' },
-  { title: 'Final Report', submittedOn: '2021/10/13', type: 'Individual', link: '#' },
-  { title: 'Poster', submittedOn: '2021/10/13', type: 'Group', link: '#' },
+  { title: 'Research Paper', submittedOn: '2525/03.', type: 'Group', link: 'https://drive.google.com/drive/folders/10sAPaF-bgAnkDh4kTE8i0avxyAyxjyp4?dmr=1&ec=wgc-drive-hero-goto' },
+  { title: 'Final Report', submittedOn: '2025/04', type: 'Group', link: 'https://drive.google.com/drive/folders/1sNIncrFn1y0uzucb0SXUTpTLWiDnjT_d?dmr=1&ec=wgc-drive-hero-goto' },
+  { title: 'Final Report', submittedOn: '2025/04', type: 'Individual', link: 'https://drive.google.com/drive/folders/1oZNpI3tnBIRj3tw6LFty61nbDK4hE2wG?dmr=1&ec=wgc-drive-hero-goto' },
+  { title: 'Poster', submittedOn: 'Yet to be submitted, link will be updated soon.', type: 'Group', link: '#' },
 ]
 
 const presentations: DownloadItem[] = [
